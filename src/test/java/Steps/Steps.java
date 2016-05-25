@@ -132,7 +132,7 @@ public class Steps {
         Comment com = new Comment(driver);
         com.openPage("http://alcofan.com/test-izvestnye-alkogoliki/comment-page-1#comment-58268");
         com.Tfield("author","optimis_t@mail.ru");
-        com.Tfield("comment","РџРёС‚СЊ СЌС‚Рѕ РІРµСЃРµР»Рѕ");
+        com.Tfield("comment","Пить это весело");
         com.Tfield("email","optimis_t@mail.ru");
         com.Rbatton("submit");
         return com.Rezult("comment-metadata");
