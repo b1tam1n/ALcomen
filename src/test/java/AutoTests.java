@@ -21,12 +21,12 @@ public class AutoTests
     {
         Assert.assertTrue(steps.SahBrag());
     }
-    @Test(description = " second_Test  SahBrag")
+    @Test(description = " second_Test  Calc_Alc")
     public void CalcAlc()
     {
         Assert.assertTrue(steps.CalcAlc());
     }
-    @Test(description = " thrid_Test  SahBrag")
+    @Test(description = " thrid_Test  DilSpirt")
     public void DilSpirt()
     {
         Assert.assertTrue(steps.DilSpirt());
@@ -65,5 +65,9 @@ public class AutoTests
     public void Enter ()
     {
         Assert.assertTrue(steps.Enter());
+    }
+    @AfterMethod(description = "Close browser")
+    public void closeBrowser() {
+        steps.CloseDriver();
     }
 }

@@ -2,7 +2,11 @@ package Steps;
 import Pages.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
+
+import static java.lang.Math.random;
 
 public class Steps {
     private WebDriver driver;
@@ -11,6 +15,11 @@ public class Steps {
         driver = new FirefoxDriver();
         driver.manage().timeouts().pageLoadTimeout(300, TimeUnit.SECONDS);
         driver.manage().timeouts().implicitlyWait(200, TimeUnit.SECONDS);
+    }
+    public void CloseDriver()
+    {
+        driver.close();
+
     }
     public boolean SahBrag()
     {
@@ -131,8 +140,13 @@ public class Steps {
     {
         Comment com = new Comment(driver);
         com.openPage("http://alcofan.com/test-izvestnye-alkogoliki/comment-page-1#comment-58268");
+        String dict = "abc...xyz1234567890"; //строка содержит все доступные символы
+        Random r = new Random();
+        char c = (char)(r.nextInt(26) + 'a');
+        String coment = String.valueOf(c);
+
         com.Tfield("author","optimis_t@mail.ru");
-        com.Tfield("comment","Пить это весело");
+        com.Tfield("comment",coment);
         com.Tfield("email","optimis_t@mail.ru");
         com.Rbatton("submit");
         return com.Rezult("comment-metadata");

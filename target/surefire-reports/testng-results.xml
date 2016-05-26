@@ -1,152 +1,132 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="10" failed="0" total="10" passed="0">
+<testng-results skipped="0" failed="0" total="10" passed="10">
   <reporter-output>
   </reporter-output>
-  <suite name="AutoTests" duration-ms="45950" started-at="2016-05-26T16:32:53Z" finished-at="2016-05-26T16:33:39Z">
+  <suite name="AutoTests" duration-ms="144647" started-at="2016-05-26T21:05:14Z" finished-at="2016-05-26T21:07:39Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="45950" started-at="2016-05-26T16:32:53Z" finished-at="2016-05-26T16:33:39Z">
+    <test name="Command line test" duration-ms="144647" started-at="2016-05-26T21:05:14Z" finished-at="2016-05-26T21:07:39Z">
       <class name="AutoTests">
-        <test-method status="FAIL" signature="setUp()[pri:0, instance:AutoTests@17c68925]" name="setUp" is-config="true" duration-ms="0" started-at="2016-05-26T18:32:53Z" description="Init Browser" finished-at="2016-05-26T18:32:53Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Unable to bind to locking port 7054 within 45000 ms
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'EGOR-ой', ip: '192.168.43.66', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_74'
-Driver info: driver.version: FirefoxDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Unable to bind to locking port 7054 within 45000 ms
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'EGOR-ой', ip: '192.168.43.66', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_74'
-Driver info: driver.version: FirefoxDriver
-	at org.openqa.selenium.internal.SocketLock.lock(SocketLock.java:100)
-	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:80)
-	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:119)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:216)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:211)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:207)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:120)
-	at Steps.Steps.initBrowser(Steps.java:11)
-	at AutoTests.setUp(AutoTests.java:17)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:517)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:601)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:771)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
-	at org.testng.TestNG.run(TestNG.java:1032)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:110)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:AutoTests@3d24753a]" name="setUp" is-config="true" duration-ms="4228" started-at="2016-05-26T23:05:14Z" description="Init Browser" finished-at="2016-05-26T23:05:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="Alcogolik()[pri:0, instance:AutoTests@17c68925]" name="Alcogolik" duration-ms="0" started-at="2016-05-26T18:33:39Z" description=" five_Test  Alcogolik" finished-at="2016-05-26T18:33:39Z">
+        <test-method status="PASS" signature="Alcogolik()[pri:0, instance:AutoTests@3d24753a]" name="Alcogolik" duration-ms="7115" started-at="2016-05-26T23:05:19Z" description=" five_Test  Alcogolik" finished-at="2016-05-26T23:05:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Alcogolik -->
-        <test-method status="SKIP" signature="setUp()[pri:0, instance:AutoTests@17c68925]" name="setUp" is-config="true" duration-ms="0" started-at="2016-05-26T18:33:39Z" description="Init Browser" finished-at="2016-05-26T18:33:39Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:AutoTests@3d24753a]" name="closeBrowser" is-config="true" duration-ms="9" started-at="2016-05-26T23:05:26Z" description="Close browser" finished-at="2016-05-26T23:05:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:AutoTests@3d24753a]" name="setUp" is-config="true" duration-ms="4984" started-at="2016-05-26T23:05:26Z" description="Init Browser" finished-at="2016-05-26T23:05:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="CalcAlc()[pri:0, instance:AutoTests@17c68925]" name="CalcAlc" duration-ms="0" started-at="2016-05-26T18:33:39Z" description=" second_Test  SahBrag" finished-at="2016-05-26T18:33:39Z">
+        <test-method status="PASS" signature="CalcAlc()[pri:0, instance:AutoTests@3d24753a]" name="CalcAlc" duration-ms="15360" started-at="2016-05-26T23:05:31Z" description=" second_Test  Calc_Alc" finished-at="2016-05-26T23:05:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CalcAlc -->
-        <test-method status="SKIP" signature="setUp()[pri:0, instance:AutoTests@17c68925]" name="setUp" is-config="true" duration-ms="0" started-at="2016-05-26T18:33:39Z" description="Init Browser" finished-at="2016-05-26T18:33:39Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:AutoTests@3d24753a]" name="closeBrowser" is-config="true" duration-ms="15" started-at="2016-05-26T23:05:46Z" description="Close browser" finished-at="2016-05-26T23:05:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:AutoTests@3d24753a]" name="setUp" is-config="true" duration-ms="6173" started-at="2016-05-26T23:05:46Z" description="Init Browser" finished-at="2016-05-26T23:05:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="setUp()[pri:0, instance:AutoTests@17c68925]" name="setUp" is-config="true" duration-ms="0" started-at="2016-05-26T18:33:39Z" description="Init Browser" finished-at="2016-05-26T18:33:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="Comment()[pri:0, instance:AutoTests@17c68925]" name="Comment" duration-ms="0" started-at="2016-05-26T18:33:39Z" description=" six_Test  Comment" finished-at="2016-05-26T18:33:39Z">
+        <test-method status="PASS" signature="Comment()[pri:0, instance:AutoTests@3d24753a]" name="Comment" duration-ms="9706" started-at="2016-05-26T23:05:52Z" description=" six_Test  Comment" finished-at="2016-05-26T23:06:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Comment -->
-        <test-method status="SKIP" signature="DilSpirt()[pri:0, instance:AutoTests@17c68925]" name="DilSpirt" duration-ms="0" started-at="2016-05-26T18:33:39Z" description=" thrid_Test  SahBrag" finished-at="2016-05-26T18:33:39Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:AutoTests@3d24753a]" name="closeBrowser" is-config="true" duration-ms="9" started-at="2016-05-26T23:06:02Z" description="Close browser" finished-at="2016-05-26T23:06:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:AutoTests@3d24753a]" name="setUp" is-config="true" duration-ms="6472" started-at="2016-05-26T23:06:02Z" description="Init Browser" finished-at="2016-05-26T23:06:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="DilSpirt()[pri:0, instance:AutoTests@3d24753a]" name="DilSpirt" duration-ms="7031" started-at="2016-05-26T23:06:08Z" description=" thrid_Test  DilSpirt" finished-at="2016-05-26T23:06:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DilSpirt -->
-        <test-method status="SKIP" signature="setUp()[pri:0, instance:AutoTests@17c68925]" name="setUp" is-config="true" duration-ms="0" started-at="2016-05-26T18:33:39Z" description="Init Browser" finished-at="2016-05-26T18:33:39Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:AutoTests@3d24753a]" name="closeBrowser" is-config="true" duration-ms="11" started-at="2016-05-26T23:06:15Z" description="Close browser" finished-at="2016-05-26T23:06:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:AutoTests@3d24753a]" name="setUp" is-config="true" duration-ms="5182" started-at="2016-05-26T23:06:15Z" description="Init Browser" finished-at="2016-05-26T23:06:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="Enter()[pri:0, instance:AutoTests@17c68925]" name="Enter" duration-ms="0" started-at="2016-05-26T18:33:39Z" description=" ten_Test Enter " finished-at="2016-05-26T18:33:39Z">
+        <test-method status="PASS" signature="Enter()[pri:0, instance:AutoTests@3d24753a]" name="Enter" duration-ms="4041" started-at="2016-05-26T23:06:21Z" description=" ten_Test Enter " finished-at="2016-05-26T23:06:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Enter -->
-        <test-method status="SKIP" signature="setUp()[pri:0, instance:AutoTests@17c68925]" name="setUp" is-config="true" duration-ms="0" started-at="2016-05-26T18:33:39Z" description="Init Browser" finished-at="2016-05-26T18:33:39Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:AutoTests@3d24753a]" name="closeBrowser" is-config="true" duration-ms="7" started-at="2016-05-26T23:06:25Z" description="Close browser" finished-at="2016-05-26T23:06:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:AutoTests@3d24753a]" name="setUp" is-config="true" duration-ms="6118" started-at="2016-05-26T23:06:25Z" description="Init Browser" finished-at="2016-05-26T23:06:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="NapYou()[pri:0, instance:AutoTests@17c68925]" name="NapYou" duration-ms="0" started-at="2016-05-26T18:33:39Z" description=" eight_Test8  NapitokYou " finished-at="2016-05-26T18:33:39Z">
+        <test-method status="PASS" signature="NapYou()[pri:0, instance:AutoTests@3d24753a]" name="NapYou" duration-ms="6435" started-at="2016-05-26T23:06:31Z" description=" eight_Test8  NapitokYou " finished-at="2016-05-26T23:06:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NapYou -->
-        <test-method status="SKIP" signature="setUp()[pri:0, instance:AutoTests@17c68925]" name="setUp" is-config="true" duration-ms="0" started-at="2016-05-26T18:33:39Z" description="Init Browser" finished-at="2016-05-26T18:33:39Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:AutoTests@3d24753a]" name="closeBrowser" is-config="true" duration-ms="10" started-at="2016-05-26T23:06:37Z" description="Close browser" finished-at="2016-05-26T23:06:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:AutoTests@3d24753a]" name="setUp" is-config="true" duration-ms="5436" started-at="2016-05-26T23:06:37Z" description="Init Browser" finished-at="2016-05-26T23:06:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="Nap_alc()[pri:0, instance:AutoTests@17c68925]" name="Nap_alc" duration-ms="0" started-at="2016-05-26T18:33:39Z" description=" seven_Test  Napitok " finished-at="2016-05-26T18:33:39Z">
+        <test-method status="PASS" signature="Nap_alc()[pri:0, instance:AutoTests@3d24753a]" name="Nap_alc" duration-ms="6281" started-at="2016-05-26T23:06:43Z" description=" seven_Test  Napitok " finished-at="2016-05-26T23:06:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Nap_alc -->
-        <test-method status="SKIP" signature="SahBrag()[pri:0, instance:AutoTests@17c68925]" name="SahBrag" duration-ms="1" started-at="2016-05-26T18:33:39Z" description=" first_Test  SahBrag" finished-at="2016-05-26T18:33:39Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:AutoTests@3d24753a]" name="closeBrowser" is-config="true" duration-ms="17" started-at="2016-05-26T23:06:49Z" description="Close browser" finished-at="2016-05-26T23:06:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:AutoTests@3d24753a]" name="setUp" is-config="true" duration-ms="5111" started-at="2016-05-26T23:06:49Z" description="Init Browser" finished-at="2016-05-26T23:06:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="SahBrag()[pri:0, instance:AutoTests@3d24753a]" name="SahBrag" duration-ms="5173" started-at="2016-05-26T23:06:54Z" description=" first_Test  SahBrag" finished-at="2016-05-26T23:06:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SahBrag -->
-        <test-method status="SKIP" signature="setUp()[pri:0, instance:AutoTests@17c68925]" name="setUp" is-config="true" duration-ms="0" started-at="2016-05-26T18:33:39Z" description="Init Browser" finished-at="2016-05-26T18:33:39Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:AutoTests@3d24753a]" name="closeBrowser" is-config="true" duration-ms="12" started-at="2016-05-26T23:06:59Z" description="Close browser" finished-at="2016-05-26T23:06:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:AutoTests@3d24753a]" name="setUp" is-config="true" duration-ms="5266" started-at="2016-05-26T23:06:59Z" description="Init Browser" finished-at="2016-05-26T23:07:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="Superman()[pri:0, instance:AutoTests@17c68925]" name="Superman" duration-ms="0" started-at="2016-05-26T18:33:39Z" description=" nine_Test  Superman " finished-at="2016-05-26T18:33:39Z">
+        <test-method status="PASS" signature="Superman()[pri:0, instance:AutoTests@3d24753a]" name="Superman" duration-ms="7121" started-at="2016-05-26T23:07:05Z" description=" nine_Test  Superman " finished-at="2016-05-26T23:07:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Superman -->
-        <test-method status="SKIP" signature="setUp()[pri:0, instance:AutoTests@17c68925]" name="setUp" is-config="true" duration-ms="0" started-at="2016-05-26T18:33:39Z" description="Init Browser" finished-at="2016-05-26T18:33:39Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:AutoTests@3d24753a]" name="closeBrowser" is-config="true" duration-ms="17" started-at="2016-05-26T23:07:12Z" description="Close browser" finished-at="2016-05-26T23:07:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:AutoTests@3d24753a]" name="setUp" is-config="true" duration-ms="6051" started-at="2016-05-26T23:07:12Z" description="Init Browser" finished-at="2016-05-26T23:07:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="Test_alc()[pri:0, instance:AutoTests@17c68925]" name="Test_alc" duration-ms="0" started-at="2016-05-26T18:33:39Z" description=" fourth_Test  Tes_Alc" finished-at="2016-05-26T18:33:39Z">
+        <test-method status="PASS" signature="Test_alc()[pri:0, instance:AutoTests@3d24753a]" name="Test_alc" duration-ms="21228" started-at="2016-05-26T23:07:18Z" description=" fourth_Test  Tes_Alc" finished-at="2016-05-26T23:07:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test_alc -->
-        <test-method status="SKIP" signature="setUp()[pri:0, instance:AutoTests@17c68925]" name="setUp" is-config="true" duration-ms="0" started-at="2016-05-26T18:33:39Z" description="Init Browser" finished-at="2016-05-26T18:33:39Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:AutoTests@3d24753a]" name="closeBrowser" is-config="true" duration-ms="8" started-at="2016-05-26T23:07:39Z" description="Close browser" finished-at="2016-05-26T23:07:39Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
+        </test-method> <!-- closeBrowser -->
       </class> <!-- AutoTests -->
     </test> <!-- Command line test -->
   </suite> <!-- AutoTests -->

@@ -18,7 +18,10 @@ public class NapYou extends AbstractPage{
     {
         driver.navigate().to(URL);
     }
-
+    public void closePage(String URL)
+    {
+        driver.close();
+    }
     public void clickBut (String text)
     {
         driver.findElement(By.name(text)).click();
